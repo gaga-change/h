@@ -15,5 +15,5 @@ gulp.task('scss', function () {
         .pipe(gulp.dest('src'))
 });
 gulp.task('scssWatch', function () {
-    gulp.watch('src/**/*.scss', ['scss']); //当所有less文件发生改变时，调用testLess任务
+    gulp.watch('src/**/*.scss', ['scss']); //当所有scss文件发生改变时，调用scss任务
 });
