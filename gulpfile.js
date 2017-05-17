@@ -10,7 +10,7 @@ gulp.task('scss', function () {
         // .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
         // .pipe(sourcemaps.init())
         .pipe(scss())
-        // .pipe(cssmin())
+        .pipe(cssmin())
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest('src'))
 });
