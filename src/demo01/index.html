@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bootstrap 优站精选</title>
     <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <!--原链接 http://expo.bootcss.com/-->
@@ -12,7 +13,7 @@
     <header class="i-head">
         <div class="logo-img">
             <a class="center-block" href="JavaScript:void(0)">
-                <img class="img-responsive" src="img/logo-img.png" alt="logo">
+                <img class="img-responsive" src="img/logo-img.png" alt="logo" onload="imgLoaded(this)">
             </a>
         </div>
         <div class="container">
@@ -30,21 +31,113 @@
     <div class="container-fluid">
         <!--列表-->
         <div class="container">
+            <div class="row i-list">
+                <div class="col-xs-12 col-md-6">
+                    <article>
+                        <h2 class="title text-center"><a href="JavaScript:void(0)">Jekyll 中文网</a></h2>
+                        <div class="img">
+                            <a href="JavaScript:void(0)">
+                                <img class="img-responsive" src="img/a.png" alt="图片" width="700" height="438" onload="imgLoaded(this)">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <article>
+                        <h2 class="title text-center"><a href="JavaScript:void(0)">BootCDN</a></h2>
+                        <div class="img">
+                            <a href="JavaScript:void(0)">
+                                <img class="img-responsive" src="img/b.png" alt="图片" width="700" height="438" onload="imgLoaded(this)">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <article>
+                        <h2 class="title text-center"><a href="JavaScript:void(0)">Jekyll 中文网</a></h2>
+                        <div class="img">
+                            <a href="JavaScript:void(0)">
+                                <img class="img-responsive" src="img/a.png" alt="图片" width="700" height="438" onload="imgLoaded(this)">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <article>
+                        <h2 class="title text-center"><a href="JavaScript:void(0)">BootCDN</a></h2>
+                        <div class="img">
+                            <a href="JavaScript:void(0)">
+                                <img class="img-responsive" src="img/b.png" alt="图片" width="700" height="438"
+                                     onload="imgLoaded(this)">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
         <!--内容底部 翻页-->
-        <footer></footer>
+        <div class="container">
+            <nav class="i-pagination ">
+                <a href="JavaScript:void(0)">← 上一页</a>
+                <span>第 2 页/共 81 页</span>
+                <a href="JavaScript:void(0)">下一页 →</a>
+            </nav>
+        </div>
         <!--提示语-->
         <div class="i-info">
+            <div class="container">
+                如果你的网站基于 <a href="#">Bootstrap</a> 构建、并且用心的设计，那就提交到
+                <a href="#">youzhan@bootcss.com </a>
+                在这里展示吧！
+                请注明“Bootstrap网站作品提交 -- 你的网址”
+            </div>
         </div>
     </div>
-    <footer>
+    <!--底部-->
+    <footer class="i-footer">
         <!--友情链接 用到的技术 赞助商-->
-        <div>
+        <div class="container">
+            <div class="row i-link">
+                <div class="col-sm-4 link">
+                    <h4>友情链接</h4>
+                    <ul>
+                        <li><a href="#">Bootstrap中文网</a></li>
+                        <li><a href="#">Laravel中文网</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 skill">
+                    <h4>我们用到的技术</h4>
+                    <ul class="clearfix">
+                        <li><a href="#">Bootstrap</a></li>
+                        <li><a href="#">Ghost</a></li>
+                        <li><a href="#">BootCDN</a></li>
+                        <li><a href="#">Grunt</a></li>
+                        <li><a href="#">jQuery</a></li>
+                        <li><a href="#">Babeljs</a></li>
+                        <li><a href="#">Lodash</a></li>
+                        <li><a href="#">Gulp</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 company">
+                    <h4>赞助商</h4>
+                    <ul>
+                        <li><a href="#">又拍云</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!--备案号-->
-        <div>
+        <div class="i-record text-center">
+            <span>Copyright © <a href="#">优站精选</a> </span>
+            |
+            <span> <a href="#">京ICP备11008151号</a></span>
         </div>
     </footer>
 </div>
+<script>
+    function imgLoaded(e) {
+        e.setAttribute('class', e.getAttribute('class') + ' loaded')
+    }
+</script>
 </body>
 </html>
