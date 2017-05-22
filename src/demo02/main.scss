@@ -1,0 +1,20 @@
+/*Core variables and mixins*/
+@import "../bootstrap/bootstrap/variables";
+@import "../bootstrap/bootstrap/mixins";
+/*Reset*/
+@import "../bootstrap/bootstrap/normalize";
+/*Core CSS*/
+  /*标签重置样式*/
+@import "../bootstrap/bootstrap/type";
+  /*额外的标签重置样式，图片类，隐藏类*/
+@import "../bootstrap/bootstrap/scaffolding";
+  /*s栅格类*/
+@import "../bootstrap/bootstrap/grid";
+/*Utilities*/
+/*一些辅助类*/
+@import "../bootstrap/bootstrap/utilities";
+/*Private CSS*/
+@import "./css/index";
+
+
+
