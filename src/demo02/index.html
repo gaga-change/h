@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>jekyll·简单的博客、静态网站工具</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<!-- http://jekyll.com.cn/ -->
+<!-- 原页面链接 http://jekyll.com.cn/ -->
+<div class="page-index">
+    <header>
+        <img src="img/logo-2x.png" alt="jekyll-log">
+        <nav>
+            <ul>
+                <li>概述</li>
+                <li>文档</li>
+                <li>新闻</li>
+                <li class="text-uppercase">view on github</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="i-title">
+        <h1>将纯文本转化为静态网站和博客</h1>
+    </section>
+    <section class="i-intro">
+        <ul>
+            <li>
+                <h2>简单</h2>
+                <p>无需数据库、评论功能，不需要不断更新版本--只用关心你的博客内容。</p>
+                <a href="#">Jekyll 是如何工作的 → </a>
+            </li>
+            <li>
+                <h2>静态</h2>
+                <p>只用Markdown(后Textile)、Liquid、HTML&CSS就可以构建可部署的静态网站</p>
+                <a href="#">Jekyll 模板指南 →</a>
+            </li>
+            <li>
+                <h2>博客形态</h2>
+                <p>自定义地址、分类、页面、博客内容以及自定义布局设计都是系统中的一等公民。</p>
+                <a href="#">迁移你的博客 →</a>
+            </li>
+        </ul>
+    </section>
+    <section class="i-start">
+        <h2><span>只需要几秒钟</span>就能让网站跑起来。</h2>
+        <div class="i-code">
+            <h3>就这几个指令</h3>
+            <div>
+                <p><span>~</span> <span>$</span> <span>gem install jekyll</span></p>
+                <p><span>~</span> <span>$</span> <span>jekyll new my-awesome-site</span></p>
+                <p><span>~</span> <span>$</span> <span>cd my-awesome-site</span></p>
+                <p><span>~/my-awesome-site</span> <span>$</span> <span>jekyll serve</span></p>
+                <p><span># => Now Browse to http://localhost:4000</span></p>
+            </div>
+        </div>
+    </section>
+    <section class="i-host">
+        <div>
+            <img src="img/octojekyll.png" alt="github-logo">
+            <h3>使用GitHub的免费主机</h3>
+            <p>不想再与主机服务商打交道？<a href="#">GitHub Pages</a>
+                可以运行Jekyll,你很简单就可以完全免费在GitHub上发布网站 ——
+                <a href="#">自定义域名</a>
+            </p>
+            <a href="#">了解更多GitHub Pages →</a>
+        </div>
+    </section>
+    <footer>
+        <p>英文文档由 <a href="#">Tom Preston-Werner</a>基于
+            <a href="#">MIT许可</a>发布。
+        </p>
+        <p>中文文档由 <a href="#">Bootstrap中文网</a>翻译整理，并参考了jekyllcn.com的
+            译文。
+        </p>
+        <p>Proudly hosted by <span>GitHub</span></p>
+    </footer>
+</div>
 </body>
 </html>
