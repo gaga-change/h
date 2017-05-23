@@ -1,4 +1,5 @@
 {
   "root_path": "src",
-  "parse_path": "/demo02"
+  "parse_path": "/demo02",
+  "port": "8182"
 }
