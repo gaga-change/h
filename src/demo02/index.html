@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>jekyll·简单的博客、静态网站工具</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <!-- 原页面链接 http://jekyll.com.cn/ -->
-<div class="page-index">
-    <header>
-        <img src="img/logo-2x.png" alt="jekyll-log">
-        <nav>
-            <ul>
-                <li>概述</li>
-                <li>文档</li>
-                <li>新闻</li>
-                <li class="text-uppercase">view on github</li>
-            </ul>
-        </nav>
+<div class="i-page">
+    <header class="i-head container">
+        <div class="row">
+            <nav class="col-md-8 col-sm-12 i-nav col-md-push-4">
+                <ul class="center-block">
+                    <li class="active"><a href="#">概述</a></li>
+                    <li><a href="#">文档</a></li>
+                    <li><a href="#">新闻</a></li>
+                    <li class="text-uppercase"><a href="#">
+                        <span class="small-hide">view on</span>
+                        github
+                    </a></li>
+                </ul>
+            </nav>
+            <a class="logo col-md-4 col-sm-12 col-md-pull-8" href="/">
+                <img class="img-responsive center-block " src="img/logo-2x.png" alt="jekyll-log" width="249" height="115">
+            </a>
+        </div>
     </header>
     <section class="i-title">
         <h1>将纯文本转化为静态网站和博客</h1>
@@ -57,7 +65,7 @@
     </section>
     <section class="i-host">
         <div>
-            <img src="img/octojekyll.png" alt="github-logo">
+            <img class="img-responsive" src="img/octojekyll.png" alt="github-logo">
             <h3>使用GitHub的免费主机</h3>
             <p>不想再与主机服务商打交道？<a href="#">GitHub Pages</a>
                 可以运行Jekyll,你很简单就可以完全免费在GitHub上发布网站 ——

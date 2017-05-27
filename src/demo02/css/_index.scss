@@ -1,4 +1,90 @@
-div {
-  background-color: $brand-info;
-  //background-color: $brand-warning;
+@import "variable";
+
+.i-page {
+  border-top: 5px solid $color-yellow;
+  background-color: $color-bc;
+  color: $color-font;
 }
+
+/*头部*/
+.i-head {
+  /*logo*/
+  .logo {
+    padding: 10px
+  }
+  /*导航部分*/
+  @at-root .i-nav {
+    box-sizing: border-box;
+    padding: 52px 10px 10px 10px;
+    ul {
+      box-sizing: border-box;
+      max-width: 609px;
+      list-style: none;
+      padding: 0;
+      @include clearfix;
+    }
+    li {
+      @include clearfix;
+      float: left;
+      margin-top: 20px;
+      &.active > a, &.active > a:hover {
+        background-color: $color-yellow;
+        color: $color-bc-dark;
+      }
+      a {
+        padding: .3em 2em;
+        margin: 0 5px;
+        border-radius: 5px;
+        font-size: 18px;
+        color: $color-yellow;
+        transition: .3s all ease;
+        text-decoration: none;
+        font-weight: 800;
+        &:hover {
+          color: $color-yellow-dark;
+          background-color: $color-bc-dark;
+          box-shadow: 0 1px 0 rgba(225, 225, 225, .1);
+        }
+      }
+    }
+
+    /*媒体控制*/
+    @media (max-width: 570px) {
+      .small-hide {
+        display: none
+      }
+      margin-top: 0;
+      font-size: 14px;
+      padding: 0;
+      ul {
+        padding: 0;
+      }
+      li {
+        width: 25%;
+        overflow: hidden;
+        &.active > a, &.active > a:hover {
+          background-color: $color-yellow;
+          color: $color-bc-dark;
+        }
+        a {
+          display: block;
+          text-align: center;
+          width: 100%;
+          padding: .3em 0;
+          margin: auto 0;
+          border-radius: 5px;
+          font-size: 14px;
+          color: $color-yellow;
+          transition: .3s all ease;
+          text-decoration: none;
+          font-weight: 800;
+          &:hover {
+            color: $color-yellow-dark;
+            box-shadow: 0 1px 0 rgba(225, 225, 225, .1);
+          }
+        }
+      }
+    }
+  }
+}
+
