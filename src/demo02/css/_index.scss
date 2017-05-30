@@ -1,6 +1,10 @@
 @import "variable";
 
+$max-width: 570px;
 .i-page {
+  .container {
+    max-width: 978px!important;
+  }
   border-top: 5px solid $color-yellow;
   background-color: $color-bc;
   color: $color-font;
@@ -15,14 +19,16 @@
   /*导航部分*/
   @at-root .i-nav {
     box-sizing: border-box;
-    padding: 52px 10px 10px 10px;
+    padding: 52px 15px 10px;
     ul {
       box-sizing: border-box;
       max-width: 609px;
       list-style: none;
       padding: 0;
       @include clearfix;
+      display: table;
     }
+
     li {
       @include clearfix;
       float: left;
@@ -49,15 +55,13 @@
     }
 
     /*媒体控制*/
-    @media (max-width: 570px) {
-      .small-hide {
-        display: none
-      }
+    @media (max-width: $max-width) {
       margin-top: 0;
       font-size: 14px;
-      padding: 0;
+      padding: 0 15px;
       ul {
         padding: 0;
+        display: block;
       }
       li {
         width: 25%;
@@ -84,6 +88,42 @@
           }
         }
       }
+    }
+  }
+}
+
+/*标题*/
+.i-title {
+  h1 {
+    font-size: 67.2px;
+    @media (max-width: $max-width) {
+      font-size: 36.75px;
+    }
+  }
+}
+
+/*介绍*/
+.i-intro {
+  a {
+    color: $color-yellow;
+    transition: .3s all ease;
+    text-decoration: none;
+    &:hover {
+      color: $color-yellow-dark;
+    }
+  }
+  li {
+    padding: 10px;
+    h2 {
+      font-weight: bold;
+      font-size: 31.5px;
+    }
+    p {
+      margin: 21px 0;
+    }
+    p, a{
+      font-size: 21px;
+      font-weight: 300;
     }
   }
 }
