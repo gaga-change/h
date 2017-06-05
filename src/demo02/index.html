@@ -11,21 +11,32 @@
 <!-- 原页面链接 http://jekyll.com.cn/ -->
 <div class="i-page">
     <header class="i-head container">
-        <div class="row">
-            <nav class="col-md-8 col-xs-12 i-nav col-md-push-4">
-                <ul class="center-block">
-                    <li class="active"><a href="#">概述</a></li>
+        <nav class="show-on-mobile">
+            <ul class="list-unstyled">
+                <li class="current"><a href="#">概述</a></li>
+                <li><a href="#">文档</a></li>
+                <li><a href="#">新闻</a></li>
+                <li class="text-uppercase"><a href="#">GitHub</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="/">
+                <img class="center-block " src="img/logo-2x.png" alt="jekyll-log" width="249"
+                     height="115">
+            </a>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul class="list-unstyled">
+                    <li class="current"><a href="#">概述</a></li>
                     <li><a href="#">文档</a></li>
                     <li><a href="#">新闻</a></li>
                     <li class="text-uppercase"><a href="#">
-                        <span class="small-hide hidden-xs">view on</span>
+                        <span class="small-hide">view on</span>
                         github
                     </a></li>
                 </ul>
             </nav>
-            <a class="logo col-md-4 col-sm-12 col-md-pull-8" href="/">
-                <img class="img-responsive center-block " src="img/logo-2x.png" alt="jekyll-log" width="249" height="115">
-            </a>
         </div>
     </header>
     <section class="i-title container">
@@ -57,17 +68,21 @@
                 <div class="i-code col-xs-12 col-sm-8">
                     <h3>就这几个指令</h3>
                     <div>
-                        <p><span class="path">~</span> <span class="prompt">$</span> <span class="command">gem install jekyll</span></p>
-                        <p><span class="path">~</span> <span class="prompt">$</span> <span class="command">jekyll new my-awesome-site</span></p>
-                        <p><span class="path">~</span> <span class="prompt">$</span> <span class="command">cd my-awesome-site</span></p>
-                        <p><span class="path">~/my-awesome-site</span> <span>$</span> <span class="command">jekyll serve</span></p>
+                        <p><span class="path">~</span> <span class="prompt">$</span> <span class="command">gem install jekyll</span>
+                        </p>
+                        <p><span class="path">~</span> <span class="prompt">$</span> <span class="command">jekyll new my-awesome-site</span>
+                        </p>
+                        <p><span class="path">~</span> <span class="prompt">$</span> <span class="command">cd my-awesome-site</span>
+                        </p>
+                        <p><span class="path">~/my-awesome-site</span> <span>$</span> <span
+                            class="command">jekyll serve</span></p>
                         <p><span class="output"># => Now Browse to http://localhost:4000</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="i-host container">
+    <section class="i-host container ">
         <div>
             <img class="img-responsive" src="img/octojekyll.png" alt="github-logo">
             <h3>使用GitHub的免费主机</h3>
