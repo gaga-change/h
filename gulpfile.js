@@ -22,10 +22,21 @@ gulp.task('scss', function () {
         // .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
         // .pipe(sourcemaps.init())
         .pipe(scss())
-        .pipe(cssmin())
+        // .pipe(cssmin())
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest(config.root_path + config.parse_path))
         .pipe(connect.reload());
+});
+gulp.task('scss-min', function () {
+  gulp.src([config.SCSS_PATH_T, config.SCSS_PATH_F])
+  .pipe(debug({title: '编译:'}))
+  // .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+  // .pipe(sourcemaps.init())
+  .pipe(scss())
+  .pipe(cssmin())
+  // .pipe(sourcemaps.write())
+  .pipe(gulp.dest(config.root_path + config.parse_path))
+  .pipe(connect.reload());
 });
 gulp.task('html', function () {
     gulp.src('./' + config.root_path + config.parse_path + '/**/*.html')
