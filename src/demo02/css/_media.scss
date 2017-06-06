@@ -1,0 +1,135 @@
+/*中屏幕 830px*/
+@media (max-width: $max-width-md) {
+  /*view on github -> github */
+  .middle-hide {
+    display: none;
+  }
+}
+
+/*小屏幕 768px*/
+@media (max-width: $max-width-sm) {
+  /*快速开始*/
+  .i-start {
+    h2 {
+      margin-top: 20px;
+      text-align: left;
+    }
+    /*代码+标题*/
+    @at-root .i-code {
+      margin-top: 0;
+      /*代码区*/
+      & > div {
+        p {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+  /*免费主机*/
+  .i-host {
+    &:after {
+      content: "";
+      display: none;
+    }
+    /*图标*/
+    img {
+      float: none;
+      margin: -30px 0 0;
+      width: 180px;
+      height: 150px;
+    }
+    /*内容*/
+    .content {
+      margin-top: 0;
+      & > p {
+        font-size: 16px;
+      }
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/*只显示在手机屏上*/
+.show-on-mobile {
+  display: none;
+}
+
+/*手机屏*/
+@media (max-width: $max-width-xs) {
+  /*头部*/
+  .i-head {
+    .nav {
+      display: none;
+    }
+    .logo {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  /*标题*/
+  .i-title {
+    h1 {
+      font-size: 36.75px;
+      text-align: center;
+    }
+  }
+  /*介绍*/
+  .i-intro {
+    .col-sm-4 {
+      width: 100%;
+    }
+  }
+  /*快速开始*/
+  .i-start {
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+    /*代码+标题*/
+    @at-root .i-code {
+      width: 100%;
+      padding-left: 10px;
+    }
+  }
+  /*免费主机*/
+  .i-host {
+    /*图标*/
+    img {
+      float: none;
+      display: block;
+      margin: -30px auto auto;
+      width: 180px;
+      height: 150px;
+    }
+    /*内容*/
+    .content {
+      padding-right: 0;
+      margin-right: 0;
+      margin-top: 0;
+      text-align: center;
+      & > h2 {
+        text-align: center;
+      }
+      & > p {
+        text-align: center;
+      }
+    }
+  }
+  .i-footer {
+    .two-thirds {
+      p {
+        margin-top: -20px;
+      }
+    }
+  }
+  .center-on-mobiles {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .show-on-mobile {
+    display: block;
+  }
+}

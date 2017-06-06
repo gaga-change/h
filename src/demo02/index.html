@@ -5,7 +5,7 @@
     <title>jekyll·简单的博客、静态网站工具</title>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css?version=20170606.001">
 </head>
 <body>
 <!-- 原页面链接 http://jekyll.com.cn/ -->
@@ -32,7 +32,7 @@
                     <li><a href="#">文档</a></li>
                     <li><a href="#">新闻</a></li>
                     <li class="text-uppercase"><a href="#">
-                        <span class="small-hide">view on</span>
+                        <span class="middle-hide">view on</span>
                         github
                     </a></li>
                 </ul>
@@ -40,10 +40,10 @@
         </div>
     </header>
     <section class="i-title container">
-        <h1 class="text-center">将纯文本转化为静态网站和博客</h1>
+        <h1 class="text-left">将纯文本转化为静态网站和博客</h1>
     </section>
     <section class="i-intro container">
-        <ul class="list-unstyled row">
+        <ul class="list-unstyled clearfix">
             <li class="col-sm-4">
                 <h2>简单</h2>
                 <p>无需数据库、评论功能，不需要不断更新版本--只用关心你的博客内容。</p>
@@ -64,8 +64,8 @@
     <section class="i-start">
         <div class="container">
             <div class="row">
-                <h2 class="col-xs-12 col-sm-4"><em>只需要几秒钟</em>就能让网站跑起来。</h2>
-                <div class="i-code col-xs-12 col-sm-8">
+                <h2><em>只需要几秒钟</em>就能让网站跑起来。</h2>
+                <div class="i-code ">
                     <h3>就这几个指令</h3>
                     <div>
                         <p><span class="path">~</span> <span class="prompt">$</span> <span class="command">gem install jekyll</span>
@@ -82,25 +82,34 @@
             </div>
         </div>
     </section>
-    <section class="i-host container ">
-        <div>
+    <section class="i-host container">
+        <div class="pane">
             <img class="img-responsive" src="img/octojekyll.png" alt="github-logo">
-            <h3>使用GitHub的免费主机</h3>
-            <p>不想再与主机服务商打交道？<a href="#">GitHub Pages</a>
-                可以运行Jekyll,你很简单就可以完全免费在GitHub上发布网站 ——
-                <a href="#">自定义域名</a>
-            </p>
-            <a href="#">了解更多GitHub Pages →</a>
+            <div class="content">
+                <h2>使用GitHub的免费主机</h2>
+                <p>不想再与主机服务商打交道？<a href="#">GitHub Pages</a>
+                    可以运行Jekyll,你很简单就可以完全免费在GitHub上发布网站 ——
+                    <a href="#">自定义域名</a>
+                </p>
+                <a href="#">了解更多GitHub Pages →</a>
+            </div>
         </div>
     </section>
-    <footer class="i-footer container">
-        <p>英文文档由 <a href="#">Tom Preston-Werner</a>基于
-            <a href="#">MIT许可</a>发布。
-        </p>
-        <p>中文文档由 <a href="#">Bootstrap中文网</a>翻译整理，并参考了jekyllcn.com的
-            译文。
-        </p>
-        <p>Proudly hosted by <span>GitHub</span></p>
+    <footer class="i-footer ">
+        <div class="container">
+            <div class="one-third center-on-mobiles">
+                <p>英文文档由 <a href="#">Tom Preston-Werner</a>基于
+                    <a href="#">MIT许可</a>发布。
+                </p>
+                <p>中文文档由 <a href="#">Bootstrap中文网</a>翻译整理，并参考了jekyllcn.com的
+                    译文。
+                </p>
+            </div>
+            <div class="two-thirds text-right center-on-mobiles">
+                <p>Proudly hosted by
+                    <a href="#"><img src="img/footer-logo.png" alt="GitHub·Social coding"></a></p>
+            </div>
+        </div>
     </footer>
 </div>
 </body>

@@ -6,17 +6,10 @@
 /*Core CSS*/
   /*标签重置样式*/
 @import "../bootstrap/bootstrap/type";
-  /*额外的标签重置样式，图片类，隐藏类*/
-@import "../bootstrap/bootstrap/scaffolding";
-  /*s栅格类*/
-//@import "../bootstrap/bootstrap/grid";
-/*Utilities*/
-/*一些工具类*/
-@import "../bootstrap/bootstrap/utilities";
-  /*响应式工具类*/
-//@import "../bootstrap/bootstrap/responsive-utilities";
-/*Private CSS*/
+
 @import "./css/index";
+@import "./css/media";
+
 
 
 
