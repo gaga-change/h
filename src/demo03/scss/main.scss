@@ -1,24 +1,31 @@
-/*Core variables and mixins*/
-@import "../../bootstrap/bootstrap/variables";
-@import "../../bootstrap/bootstrap/mixins";
-/*Reset*/
-@import "../../bootstrap/bootstrap/normalize";
-/*--------------Core CSS-----------------*/
-/*字体颜色、字体大小、背景颜色、margin、font-family、font-size*/
-@import "../../bootstrap/bootstrap/type";
-/*额外的标签重置样式，图片类，隐藏类*/
-@import "../../bootstrap/bootstrap/scaffolding";
-/*s栅格类*/
-@import "../../bootstrap/bootstrap/grid";
-/*表单*/
-@import "../../bootstrap/bootstrap/forms";
-/*--------------Utilities-----------------*/
-/*一些工具类*/
-@import "../../bootstrap/bootstrap/utilities";
-/*响应式工具类*/
-@import "../../bootstrap/bootstrap/responsive-utilities";
-/*个人*/
+///*Core variables and mixins*/
+//@import "../../bootstrap/bootstrap/variables";
+//@import "../../bootstrap/bootstrap/mixins";
+///*Reset*/
+//@import "../../bootstrap/bootstrap/normalize";
+//
+///*--------------Core CSS-----------------*/
+///*字体颜色、字体大小、背景颜色、margin、font-family、font-size*/
+//@import "../../bootstrap/bootstrap/type";
+///*额外的标签重置样式，图片类，隐藏类*/
+//@import "../../bootstrap/bootstrap/scaffolding";
+///*s栅格类*/
+//@import "../../bootstrap/bootstrap/grid";
+///*表单*/
+//@import "../../bootstrap/bootstrap/forms";
+///*导航条*/
+//@import "../../bootstrap/bootstrap/navs";
+//@import "../../bootstrap/bootstrap/navbar";
+///*--------------Utilities-----------------*/
+///*一些工具类*/
+//@import "../../bootstrap/bootstrap/utilities";
+///*响应式工具类*/
+//@import "../../bootstrap/bootstrap/responsive-utilities";
+
+@import "../../bootstrap/bootstrap";
+/*--------------个人---------------------*/
 @import "index";
+
 #__bs_notify__ {
   opacity: .1;
 }
