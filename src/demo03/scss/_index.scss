@@ -1,0 +1,34 @@
+$color-bc: #27ae60;
+/*头部*/
+.i-header {
+  .container a, .container .nav a{
+    color: #eee;
+    //@include transition(all, .3s);
+    &:hover {
+      color: #fff;
+    }
+  }
+  color: #eee;
+  background-color: $color-bc;
+  nav {
+    background-color: inherit;
+    border: none;
+  }
+  /*两个logo*/
+  a.navbar-brand {
+    display: block;
+    height: 30px;
+    width: 124px;
+    padding: 15px;
+    margin: 10px 0 10px 15px;
+    background-size: contain;
+    @at-root .logo-bootcdn {
+      background: url("../img/bootcdn.svg") no-repeat 0 0 ;
+    }
+    @at-root .logo-upyun{
+      background: url("../img/upyun.svg") no-repeat 0 0;
+    }
+  ;
+  }
+
+}

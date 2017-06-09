@@ -5815,5 +5815,29 @@ button.close {
     display: none !important; } }
 
 /*--------------个人---------------------*/
+/*头部*/
+.i-header {
+  color: #eee;
+  background-color: #27ae60;
+  /*两个logo*/ }
+  .i-header .container a, .i-header .container .nav a {
+    color: #eee; }
+    .i-header .container a:hover, .i-header .container .nav a:hover {
+      color: #fff; }
+  .i-header nav {
+    background-color: inherit;
+    border: none; }
+  .i-header a.navbar-brand {
+    display: block;
+    height: 30px;
+    width: 124px;
+    padding: 15px;
+    margin: 10px 0 10px 15px;
+    background-size: contain; }
+    .logo-bootcdn {
+      background: url("../img/bootcdn.svg") no-repeat 0 0; }
+    .logo-upyun {
+      background: url("../img/upyun.svg") no-repeat 0 0; }
+
 #__bs_notify__ {
   opacity: .1; }
