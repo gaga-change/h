@@ -5815,10 +5815,24 @@ button.close {
     display: none !important; } }
 
 /*--------------个人---------------------*/
+body {
+  font-family: "Helvetica Neue", Helvetica, "Lucida Grande", Arial, "Hiragino Sans GB", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif; }
+
+@media (min-width: 480px) {
+  .collapse {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0; }
+  .navbar > .container .navbar-brand {
+    margin-left: 0; } }
+
 /*头部*/
 .i-header {
+  padding: 20px 0 50px;
   color: #eee;
   background-color: #27ae60;
+  /*右边导航*/
   /*两个logo*/ }
   .i-header .container a, .i-header .container .nav a {
     color: #eee; }
