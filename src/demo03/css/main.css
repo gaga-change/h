@@ -5920,5 +5920,21 @@ body {
       right: 10px;
       top: 18px; }
 
+/*包图标*/
+.i-packages ul {
+  margin-bottom: 0; }
+
+.i-packages li {
+  padding: 0 18px; }
+
+.i-packages a {
+  opacity: .6; }
+  .i-packages a:hover {
+    opacity: 1; }
+
+.i-packages img {
+  max-height: 32px;
+  vertical-align: bottom; }
+
 #__bs_notify__ {
   opacity: .1; }

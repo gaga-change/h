@@ -132,3 +132,23 @@ body {
     }
   }
 }
+
+/*包图标*/
+.i-packages {
+  ul {
+    margin-bottom: 0;
+  }
+  li {
+    padding: 0 18px;
+  }
+  a {
+    opacity: .6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  img {
+    max-height: 32px;
+    vertical-align: bottom;
+  }
+}
