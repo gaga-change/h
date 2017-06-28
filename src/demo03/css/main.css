@@ -5816,7 +5816,7 @@ button.close {
 
 /*--------------个人---------------------*/
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 @media (min-width: 768px) {
   .collapse {
@@ -5829,10 +5829,14 @@ body {
 
 /*菜单触发按钮更改样式*/
 .navbar-toggle {
-  border: none; }
+  border: none !important;
+  background: none !important; }
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff; }
+
+.navbar-default .navbar-collapse {
+  border: none; }
 
 /*头部*/
 .i-header {
@@ -5852,7 +5856,8 @@ body {
     background-color: inherit;
     border: none; }
     .i-header nav.navbar {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      text-align: center; }
   .i-header a.navbar-brand {
     display: block;
     height: 30px;
@@ -5873,7 +5878,8 @@ body {
   padding-bottom: 30px;
   margin-bottom: 30px;
   /*标题*/
-  /*简介*/ }
+  /*简介*/
+  /*输入框部分*/ }
   .header-con > h1 {
     color: #fff;
     text-align: center;
@@ -5891,6 +5897,28 @@ body {
     font-weight: 200; }
     .header-con p.info small {
       font-size: 14px; }
+  .header-con .search-form {
+    max-width: 680px;
+    margin: 30px auto 20px;
+    position: relative; }
+    .header-con .search-form input.search-input {
+      height: auto;
+      box-shadow: none;
+      border-radius: 0;
+      border: none;
+      padding: 13px 30px;
+      text-align: center;
+      font-size: 16px; }
+      .header-con .search-form input.search-input:focus {
+        -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
+    .header-con .search-form .search-img {
+      cursor: pointer;
+      position: absolute;
+      color: #a3a3a4;
+      font-size: 16px;
+      right: 10px;
+      top: 18px; }
 
 #__bs_notify__ {
   opacity: .1; }
