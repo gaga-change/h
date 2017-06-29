@@ -60,6 +60,7 @@
       </form>
     </div>
   </header>
+  <!--包图标-->
   <section class="i-packages hidden-xs hidden-sm well well-sm text-center">
     <ul class="list-unstyled list-inline">
       <li><a href="#"><img src="img/angular-icon.svg" alt="angular"></a></li>
@@ -70,7 +71,19 @@
     </ul>
   </section>
   <!--选择协议-->
-  <section class="i-protocol"></section>
+  <section class="i-protocol container hidden-xs">
+    <label>选择协议：</label>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default active">https</button>
+      <button type="button" class="btn btn-default">http</button>
+      <button type="button" class="btn btn-default">自适应</button>
+    </div>
+    <span class="help-block">
+        <a href="#">了解详情
+          <i class="fa fa-info-circle"></i>
+        </a>
+      </span>
+  </section>
   <!--列表-->
   <section class="i-list"></section>
   <!--底部-->

@@ -5838,6 +5838,11 @@ body {
 .navbar-default .navbar-collapse {
   border: none; }
 
+a {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
 /*头部*/
 .i-header {
   padding: 0;
@@ -5935,6 +5940,33 @@ body {
 .i-packages img {
   max-height: 32px;
   vertical-align: bottom; }
+
+/*选择协议*/
+.i-protocol {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 12px;
+  overflow: hidden; }
+  .i-protocol label, .i-protocol span, .i-protocol .btn-group {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0; }
+  .i-protocol label {
+    color: #000;
+    font-weight: 700; }
+  .i-protocol .btn.active {
+    background-color: #27ae60;
+    border-color: #27ae60;
+    color: #fff; }
+  .i-protocol span a {
+    margin-left: 24px;
+    color: #aaa; }
+    .i-protocol span a:hover {
+      color: #000; }
+
+/*列表*/
+.i-list {
+  margin-top: 50px; }
 
 #__bs_notify__ {
   opacity: .1; }

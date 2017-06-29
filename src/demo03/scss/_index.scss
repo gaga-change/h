@@ -30,6 +30,9 @@ body {
   border: none;
 }
 
+a {
+  @include transition(all .3s ease)
+}
 /*头部*/
 .i-header {
   padding: 0;
@@ -151,4 +154,38 @@ body {
     max-height: 32px;
     vertical-align: bottom;
   }
+}
+
+/*选择协议*/
+.i-protocol {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 12px;
+  overflow: hidden;
+  label, span, .btn-group {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+  }
+  label {
+    color: #000;
+    font-weight: 700;
+  }
+  .btn.active {
+    background-color: $color-bc;
+    border-color: $color-bc;
+    color: #fff;
+  }
+  span a {
+    margin-left: 24px;
+    color: #aaa;
+    &:hover {
+      color: #000
+    }
+  }
+}
+
+/*列表*/
+.i-list {
+  margin-top: 50px;
 }
